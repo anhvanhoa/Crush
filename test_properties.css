@@ -111,7 +111,7 @@ h1::after {
 
 @keyframes moveH1 {
     from {
-    transform: translateX(-100%);
+    transform: translateX(-79%);
     }
     to {
     transform: translateX(0%);
@@ -163,6 +163,6 @@ audio {
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 70px;
     }
 }
