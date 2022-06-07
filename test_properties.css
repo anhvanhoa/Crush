@@ -7,7 +7,24 @@
 
 #root {
     background-color: rgb(255, 166, 181);
+    background-image: url(https://elead.com.vn/wp-content/uploads/2020/04/hinh-anh-dep-tinh-yeu-doi-lua_104516810.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: inherit;
     height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(66, 66, 66, 0.349);
+    filter: blur(1%);
 }
 
 #root p {
@@ -15,7 +32,7 @@
     padding: 0 60px;
     padding-top: 200px;
     font-size: 40px;
-    color: rgb(58, 58, 58);
+    color: rgb(255, 255, 255);
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
@@ -49,6 +66,8 @@ button:hover {
 
 .speech-two {
     display: none;
+    position: relative;
+    z-index: 1;
 }
 
 .paragraph-three,
@@ -59,6 +78,15 @@ button:hover {
 
 .big-heart {
     color: red;
+}
+
+.speech-one {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 button:hover .fa-face-angry, 
@@ -89,23 +117,25 @@ button:hover .fa-heart {
 
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 200px;
     letter-spacing: 10px;
     padding-top: 200px;
     position: relative;
+    color: #fff;
+    text-shadow: 0 0 20px #000;
 }
 
-h1::after {
+/* h1::after {
     content: "";
     position: absolute;
     bottom: -14px;
     width: 420px;
     height: 150px;
-    background-color: rgb(255, 166, 181);
+    background-color: rgba(146, 92, 101, 0);
     border-left: rgb(44, 44, 44) solid 6px;
     animation: moveH1 ease-in-out 5s infinite;
     transform: translateX(0%);
-}
+} */
 
 @keyframes moveH1 {
     from {
@@ -156,12 +186,18 @@ audio {
     }
 
     button {
-        font-size: 13px;
-        padding: 15px 20px;
+        font-size: 10px;
+        padding: 0;
+        width: 100px;
+        height: 40px;
     }
 
     h1 {
         font-size: 70px;
         font-size: 60px;
 }
+
+    #root p {
+        padding-top: 50px;
+    }
 }
